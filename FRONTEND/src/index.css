@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   GLOBAL BASE
+───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+img, video, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE UTILITIES
+───────────────────────────────────────────── */
+/* Fluid typography: clamp(min, preferred, max) */
+.text-fluid-sm  { font-size: clamp(0.75rem,  1.5vw,  0.875rem); }
+.text-fluid-base{ font-size: clamp(0.875rem, 2vw,    1rem); }
+.text-fluid-lg  { font-size: clamp(1rem,     2.5vw,  1.25rem); }
+.text-fluid-xl  { font-size: clamp(1.25rem,  3vw,    1.5rem); }
+.text-fluid-2xl { font-size: clamp(1.5rem,   4vw,    2rem); }
+.text-fluid-3xl { font-size: clamp(1.875rem, 5vw,    2.5rem); }
+.text-fluid-4xl { font-size: clamp(2rem,     6vw,    3.5rem); }
+.text-fluid-hero{ font-size: clamp(2.25rem,  7vw,    4.5rem); }
+
+/* Safe area insets for notched devices */
+.px-safe { padding-left: max(1rem, env(safe-area-inset-left)); padding-right: max(1rem, env(safe-area-inset-right)); }
+.pb-safe { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
+
+/* Touch targets — minimum 44px per Apple/Google guidelines */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─────────────────────────────────────────────
+   UTILITY CLASSES
+───────────────────────────────────────────── */
+.preserve-3d  { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.25s ease-out forwards; }
+
+/* ─────────────────────────────────────────────
+   BACKGROUND EFFECTS
+───────────────────────────────────────────── */
+@keyframes float-ray-1 {
+  0%   { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33%  { transform: translate(40px, -60px) scale(1.1) rotate(120deg); }
+  66%  { transform: translate(-25px, 30px) scale(0.95) rotate(240deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+}
+@keyframes float-ray-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-50px, 50px) scale(1.15); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+@keyframes morph-shape {
+  0%   { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  34%  { border-radius: 70% 30% 50% 50% / 30% 60% 40% 70%; }
+  67%  { border-radius: 50% 60% 30% 70% / 60% 30% 70% 40%; }
+  100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+}
+@keyframes particle-drift {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0.2; }
+  50%  { transform: translateY(-120px) translateX(20px) scale(1.3); opacity: 0.7; }
+  100% { transform: translateY(-240px) translateX(-10px) scale(0.5); opacity: 0; }
+}
+@keyframes subtle-wave {
+  0%   { transform: translateX(0) scaleY(1); }
+  50%  { transform: translateX(-25%) scaleY(0.9); }
+  100% { transform: translateX(-50%) scaleY(1); }
+}
+
+.animate-ray-1    { animation: float-ray-1 20s infinite ease-in-out; }
+.animate-ray-2    { animation: float-ray-2 24s infinite ease-in-out; }
+.animate-morph    { animation: morph-shape 14s infinite ease-in-out; }
+.animate-wave     { animation: subtle-wave 28s infinite linear; }
+.animate-particle { animation: particle-drift 12s infinite linear; }
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-ray-1, .animate-ray-2, .animate-morph,
+  .animate-wave, .animate-particle, .animate-float-card,
+  .animate-tilt, .animate-pulse-glow, .shimmer-text,
+  .animate-gradient-x {
+    animation: none !important;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   TEXT EFFECTS
+───────────────────────────────────────────── */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+@keyframes shimmer-sweep {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, #1e40af 0%, #4f46e5 40%, #a855f7 50%, #4f46e5 60%, #1e40af 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 3s linear infinite;
+}
+
+/* ─────────────────────────────────────────────
+   CARD / ELEMENT EFFECTS
+───────────────────────────────────────────── */
+@keyframes float-card {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+.animate-float-card { animation: float-card 4s ease-in-out infinite; }
+
+@keyframes buzz {
+  0%, 100% { transform: translateX(0); }
+  10%  { transform: translateX(-3px) rotate(-1deg); }
+  20%  { transform: translateX(3px) rotate(1deg); }
+  30%  { transform: translateX(-3px) rotate(-1deg); }
+  40%  { transform: translateX(3px); }
+  50%  { transform: translateX(-2px); }
+  60%  { transform: translateX(2px); }
+  70%  { transform: translateX(-1px); }
+  80%  { transform: translateX(1px); }
+  90%  { transform: translateX(0); }
+}
+.animate-buzz:hover { animation: buzz 0.5s ease-in-out; }
+
+@keyframes tilt-left {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(-3deg); }
+  75%       { transform: rotate(3deg); }
+}
+.animate-tilt { animation: tilt-left 3s ease-in-out infinite; }
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59,130,246,0.4); }
+  50%       { box-shadow: 0 0 20px 6px rgba(59,130,246,0.15); }
+}
+.animate-pulse-glow { animation: pulse-glow 2.5s ease-in-out infinite; }
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE LAYOUT HELPERS
+───────────────────────────────────────────── */
+
+/* Auth split-panel: info panel hides on ≤ 1024px, form takes full width */
+@media (max-width: 1023px) {
+  .auth-panel-info { display: none !important; }
+  .auth-panel-form { width: 100% !important; max-width: 100% !important; }
+}
+
+/* Dashboard main content horizontal padding */
+@media (max-width: 640px) {
+  .dashboard-main { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* PaperDetailPage: sidebar collapses on mobile */
+@media (max-width: 768px) {
+  .paper-sidebar-collapsible { display: none; }
+  .paper-sidebar-collapsible.open { display: block; }
+}
+
+/* Feature card grid — single column on very small screens */
+@media (max-width: 400px) {
+  .feature-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Ensure all buttons & links have good tap areas on touch */
+@media (hover: none) and (pointer: coarse) {
+  a, button { min-height: 40px; }
+  input, select, textarea { font-size: 16px; } /* Prevents iOS zoom on focus */
+}
+
+/* OTP boxes: shrink gracefully on small screens */
+@media (max-width: 380px) {
+  .otp-box { width: 2.5rem !important; height: 3rem !important; font-size: 1.1rem !important; }
+}
+
+/* Navbar: prevent text overflow on very small screens */
+@media (max-width: 320px) {
+  .navbar-brand-text { font-size: 1rem !important; }
+}

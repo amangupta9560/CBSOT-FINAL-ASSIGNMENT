@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="auto">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc" rx="12" />
+  
+  <!-- User Model -->
+  <rect x="50" y="50" width="160" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="50" y="50" width="160" height="30" rx="8" fill="#3b82f6" />
+  <text x="130" y="70" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">User Schema</text>
+  <text x="60" y="105" fill="#475569" font-family="monospace" font-size="10">_id (ObjectId)</text>
+  <text x="60" y="125" fill="#475569" font-family="monospace" font-size="10">fullName (String)</text>
+  <text x="60" y="145" fill="#475569" font-family="monospace" font-size="10">email (String)</text>
+  <text x="60" y="165" fill="#475569" font-family="monospace" font-size="10">password (String)</text>
+  <text x="60" y="185" fill="#475569" font-family="monospace" font-size="10">isVerified (Bool)</text>
+  
+  <!-- Paper Model -->
+  <rect x="320" y="50" width="160" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="320" y="50" width="160" height="30" rx="8" fill="#0d9488" />
+  <text x="400" y="70" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Paper Schema</text>
+  <text x="330" y="105" fill="#475569" font-family="monospace" font-size="10">_id (ObjectId)</text>
+  <text x="330" y="125" fill="#475569" font-family="monospace" font-size="10">userId (Ref User)</text>
+  <text x="330" y="145" fill="#475569" font-family="monospace" font-size="10">title (String)</text>
+  <text x="330" y="165" fill="#475569" font-family="monospace" font-size="10">status (String)</text>
+  <text x="330" y="185" fill="#475569" font-family="monospace" font-size="10">agentOutputRef</text>
+  
+  <!-- AgentOutput Model -->
+  <rect x="590" y="50" width="160" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+  <rect x="590" y="50" width="160" height="30" rx="8" fill="#7c3aed" />
+  <text x="670" y="70" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">AgentOutput Schema</text>
+  <text x="600" y="105" fill="#475569" font-family="monospace" font-size="10">_id (ObjectId)</text>
+  <text x="600" y="125" fill="#475569" font-family="monospace" font-size="10">paperId (Ref Paper)</text>
+  <text x="600" y="145" fill="#475569" font-family="monospace" font-size="10">summary (Object)</text>
+  <text x="600" y="165" fill="#475569" font-family="monospace" font-size="10">citations (Object)</text>
+  <text x="600" y="185" fill="#475569" font-family="monospace" font-size="10">flashcards (Array)</text>
+
+  <!-- Connections -->
+  <!-- User to Paper (1 to N) -->
+  <path d="M 210 140 L 320 140" stroke="#94a3b8" stroke-width="2" marker-end="url(#crowfoot)" fill="none" />
+  <!-- Paper to AgentOutput (1 to 1) -->
+  <path d="M 480 140 L 590 140" stroke="#94a3b8" stroke-width="2" marker-start="url(#circle)" marker-end="url(#circle)" fill="none" />
+</svg>

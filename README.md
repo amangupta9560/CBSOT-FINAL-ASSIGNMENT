@@ -1,14 +1,37 @@
 <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; color: #334155; line-height: 1.6; max-width: 1100px; margin: 0 auto; padding: 20px;">
 
+  <!-- ── BANNER IMAGE ─────────────────────────────────────────────────────── -->
+  <div style="text-align: center; margin-bottom: 30px;">
+    <img src="https://res.cloudinary.com/dgtyqhtor/image/upload/v1783586158/ChatGPT_Image_Jul_9_2026_02_05_10_PM_unocpx.png" alt="ResearchMind AI Banner" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.15);" />
+  </div>
+
   <!-- ── MAIN HEADER ──────────────────────────────────────────────────────── -->
-  <h1 style="color: #1e3a8a; font-size: 2.8rem; font-weight: 800; border-bottom: 4px solid #3b82f6; padding-bottom: 15px; margin-bottom: 25px; display: flex; align-items: center; gap: 15px;">
-    <span style="background: linear-gradient(135deg, #3b82f6, #6366f1); color: white; padding: 8px 16px; border-radius: 16px; font-size: 2.2rem; box-shadow: 0 4px 12px rgba(59,130,246,0.25);">R</span>
+  <h1 style="color: #1e3a8a; font-size: 2.8rem; font-weight: 800; border-bottom: 4px solid #3b82f6; padding-bottom: 15px; margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
+    <span style="background: linear-gradient(135deg, #3b82f6, #6366f1); color: white; padding: 8px 16px; border-radius: 16px; font-size: 2.2rem; box-shadow: 0 4px 12px rgba(59,130,246,0.25);"></span>
     ResearchMind AI — Agentic AI Research OS
   </h1>
 
-  <p style="font-size: 1.25rem; color: #475569; font-weight: 500; margin-bottom: 30px;">
+  <!-- ── TECH STACK BADGES ────────────────────────────────────────────────── -->
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px;">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge" />
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.dot-js&logoColor=white" alt="Node.js Badge" />
+    <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express Badge" />
+    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI Badge" />
+    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB Badge" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind Badge" />
+    <img src="https://img.shields.io/badge/Groq-F39C12?style=for-the-badge&logoColor=white" alt="Groq Badge" />
+  </div>
+
+  <p style="font-size: 1.25rem; color: #475569; font-weight: 500; margin-bottom: 20px;">
     An advanced, production-grade <b>Full-Stack Agentic AI Research Assistant SaaS</b> designed to eliminate the fragmentation of academic workflows. Built on a state-of-the-art <b>LangGraph multi-agent architecture</b> with a strict <b>ChromaDB RAG pipeline</b>, ResearchMind AI processes PDFs, indexes semantic chunks, and deploys 17 specialized AI agents to extract metadata, citations, research gaps, mathematical formulas, and write outlines.
   </p>
+
+  <!-- ── LIVE PLATFORM LINK ───────────────────────────────────────────────── -->
+  <div style="text-align: center; margin-bottom: 35px;">
+    <a href="https://researchmind-ai.netlify.app" style="display: inline-block; padding: 14px 28px; background: linear-gradient(135deg, #2563eb, #4f46e5); color: white; text-decoration: none; font-weight: 700; border-radius: 30px; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35); transform: translateY(0); transition: all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(79, 70, 229, 0.45)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(79, 70, 229, 0.35)';">
+      🌐 Launch Live ResearchMind AI Platform
+    </a>
+  </div>
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
@@ -21,23 +44,25 @@
     <ul style="list-style-type: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
       <li>🔍 <a href="#what-is-researchmind" style="color: #2563eb; text-decoration: none; font-weight: 600;">What is ResearchMind AI</a></li>
       <li>👥 <a href="#who-its-for" style="color: #2563eb; text-decoration: none; font-weight: 600;">Who It's For</a></li>
+      <li>📌 <a href="#details-tables" style="color: #2563eb; text-decoration: none; font-weight: 600;">Student & Internship Details</a></li>
+      <li>💡 <a href="#why-and-what" style="color: #2563eb; text-decoration: none; font-weight: 600;">Why & What I Learnt</a></li>
       <li>⚠️ <a href="#problems-solved" style="color: #2563eb; text-decoration: none; font-weight: 600;">What Problems It Solves</a></li>
       <li>🖼️ <a href="#visual-diagrams" style="color: #2563eb; text-decoration: none; font-weight: 600;">System Diagrams & Workflows</a></li>
       <li>🤖 <a href="#agentic-architecture" style="color: #2563eb; text-decoration: none; font-weight: 600;">Multi-Agent Architecture</a></li>
       <li>📖 <a href="#how-to-use" style="color: #2563eb; text-decoration: none; font-weight: 600;">How to Use the Project</a></li>
+      <li>📦 <a href="#library-packages" style="color: #2563eb; text-decoration: none; font-weight: 600;">Library Packages Details</a></li>
       <li>📂 <a href="#project-structure" style="color: #2563eb; text-decoration: none; font-weight: 600;">Project Structure</a></li>
       <li>💻 <a href="#tech-stack" style="color: #2563eb; text-decoration: none; font-weight: 600;">Tech Stack</a></li>
       <li>⚙️ <a href="#local-setup" style="color: #2563eb; text-decoration: none; font-weight: 600;">How to Run Locally</a></li>
       <li>🔑 <a href="#environment-variables" style="color: #2563eb; text-decoration: none; font-weight: 600;">Environment Templates</a></li>
       <li>🌐 <a href="#api-endpoints" style="color: #2563eb; text-decoration: none; font-weight: 600;">All API Routes Summary</a></li>
       <li>🔒 <a href="#security-groundedness" style="color: #2563eb; text-decoration: none; font-weight: 600;">Security & Groundedness</a></li>
-      <li>📦 <a href="#dependencies" style="color: #2563eb; text-decoration: none; font-weight: 600;">Package Dependencies</a></li>
     </ul>
   </div>
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
-  <!-- ── SECTION 1 ───────────────────────────────────────────────────────── -->
+  <!-- ── SECTION 1: WHAT IS IT ────────────────────────────────────────────── -->
   <h2 id="what-is-researchmind" style="color: #059669; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
     🔍 What is ResearchMind AI
   </h2>
@@ -63,7 +88,7 @@
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
-  <!-- ── SECTION 2 ───────────────────────────────────────────────────────── -->
+  <!-- ── SECTION 2: WHO IT'S FOR ───────────────────────────────────────────── -->
   <h2 id="who-its-for" style="color: #d97706; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
     👥 Who It's For
   </h2>
@@ -97,7 +122,95 @@
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
-  <!-- ── SECTION 3 ───────────────────────────────────────────────────────── -->
+  <!-- ── NEW SECTION: DETAILS TABLES ──────────────────────────────────────── -->
+  <h2 id="details-tables" style="color: #6366f1; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
+    📌 Student & Internship Details
+  </h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; margin-bottom: 30px;">
+    <!-- Student Details -->
+    <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+      <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #eff6ff; padding-bottom: 8px;">🎓 Student Academic Details</h3>
+      <table style="border-collapse: collapse; width: 100%; text-align: left; font-size: 0.9rem;">
+        <tbody>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569; width: 35%;">Name:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">Aman Gupta</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Domain :</td>
+            <td style="padding: 8px 4px; color: #1e293b;">AI/ML INTERN</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Branch:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">Computer Science & Engineering</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Institution:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">Hi-Tech Institute of Engineering and Technology Ghaziabad</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Course Code:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">CBSOT-FINAL-ASSIGNMENT</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Internship Details -->
+    <div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+      <h3 style="color: #0d9488; font-size: 1.3rem; margin-top: 0; margin-bottom: 15px; border-bottom: 2px solid #f0fdfa; padding-bottom: 8px;">💼 Internship Details</h3>
+      <table style="border-collapse: collapse; width: 100%; text-align: left; font-size: 0.9rem;">
+        <tbody>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569; width: 35%;">Organization:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">Coding Block Schools of Technology</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Project Name:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">ResearchMind AI OS</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Mentor Name:</td>
+            <td style="padding: 8px 4px; color: #1e293b;"> Aryesh Rai</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Domain:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">AI Engineering & Full Stack SaaS</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 4px; font-weight: 700; color: #475569;">Duration:</td>
+            <td style="padding: 8px 4px; color: #1e293b;">6 Weeks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
+
+  <!-- ── NEW SECTION: WHY AND WHAT I LEARNT ────────────────────────────────── -->
+  <h2 id="why-and-what" style="color: #7c3aed; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
+    💡 Why This Project & What I Learnt
+  </h2>
+
+  <h3 style="color: #4f46e5; font-size: 1.3rem; margin-bottom: 12px;">Why I Used This Project</h3>
+  <p style="margin-bottom: 20px;">
+    Scientific literature reviews and research indexing are severely bottlenecked by fragmentation. Students and academicians waste countless hours manually cross-referencing papers, tracking down equations, formatting citations, and compiling syntheses. I chose to build <b>ResearchMind AI</b> to demonstrate how multi-agent state machines can coordinate in real-time to index, parse, and automate these tedious steps. By combining ChromaDB similarity lookup with dynamic LangGraph decision-making, we create a system that guarantees completely factual grounding while accelerating learning and literature review times tenfold.
+  </p>
+
+  <h3 style="color: #0d9488; font-size: 1.3rem; margin-bottom: 12px;">What I Learnt</h3>
+  <ul style="padding-left: 20px; margin-bottom: 30px; line-height: 1.8;">
+    <li><b>Stateful Multi-Agent Orchestration:</b> Architecting node steps and conditional edge routers using <b>LangGraph StateGraph</b> to coordinate 17 specialized AI agents.</li>
+    <li><b>Retrieval-Augmented Generation (RAG):</b> Creating semantic chunking configurations with sentence transformers to store page-relative coordinate embeddings inside ChromaDB.</li>
+    <li><b>Secured REST Gateways:</b> Setting up dual-sided token handshakes using <code>X-API-Key</code> authorization headers to secure FastAPI-to-Express communications.</li>
+    <li><b>Aesthetics & CSS-First Animations:</b> Customizing Tailwind with Framer Motion to build complex user experiences, draggable layout cards, and smooth OTP transitions.</li>
+    <li><b>PDF parsing pipeline:</b> Managing PyMuPDF and pdfplumber configurations to extract text, tables, and equations from heavy publications.</li>
+  </ul>
+
+  <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
+
+  <!-- ── SECTION 5: PROBLEMS SOLVED ───────────────────────────────────────── -->
   <h2 id="problems-solved" style="color: #dc2626; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
     ⚠️ What Problems It Solves
   </h2>
@@ -111,7 +224,7 @@
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
-  <!-- ── SECTION 4: VISUAL DIAGRAMS (EXTERNAL IMAGE REFERENCES) ───────────── -->
+  <!-- ── SECTION 6: VISUAL DIAGRAMS ───────────────────────────────────────── -->
   <h2 id="visual-diagrams" style="color: #0f172a; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
     🖼️ System Diagrams & Workflows
   </h2>
@@ -150,15 +263,72 @@
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
-  <!-- ── HOW TO USE SECTION ────────────────────────────────────────────────── -->
+  <!-- ── SECTION 7: AGENTIC ARCHITECTURE ──────────────────────────────────── -->
+  <h2 id="agentic-architecture" style="color: #7c3aed; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
+    🤖 Multi-Agent System & LangGraph Architecture
+  </h2>
+
+  <p style="margin-bottom: 20px;">
+    ResearchMind AI doesn't rely on a single prompt. It features a stateful <b>LangGraph orchestrator</b> that routes inputs through a pipeline of specialized, autonomous agents:
+  </p>
+  <div style="background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; margin-bottom: 30px;">
+    <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-top: 0; margin-bottom: 12px;">The 17 Specialized Agents</h3>
+    <ul style="padding-left: 20px; margin-bottom: 0;">
+      <li style="margin-bottom: 8px;"><b>Paper Understanding Agent:</b> Extracts title, author arrays, journal metadata, publication year, and abstracts.</li>
+      <li style="margin-bottom: 8px;"><b>Summary Agent:</b> Compiles dual simple and technical summaries, highlighting main methodologies and core findings.</li>
+      <li style="margin-bottom: 8px;"><b>Keyword Agent:</b> Extracts general and technical keywords for indexing.</li>
+      <li style="margin-bottom: 8px;"><b>Citation Agent:</b> Generates pre-formatted citations in APA, MLA, IEEE, and BibTeX styles.</li>
+      <li style="margin-bottom: 8px;"><b>Gap Agent:</b> Analyzes methodologies and results to identify hidden research bottlenecks.</li>
+      <li style="margin-bottom: 8px;"><b>Future Work Agent:</b> Suggests downstream research directions with difficulty rankings.</li>
+      <li style="margin-bottom: 8px;"><b>Experiment Agent:</b> Generates concrete hypotheses and benchmark methodologies to test paper claims.</li>
+      <li style="margin-bottom: 8px;"><b>Mindmap Agent:</b> Exports a conceptual taxonomy in a JSON-tree structure for UI rendering.</li>
+      <li style="margin-bottom: 8px;"><b>Flashcard Agent:</b> Produces 20 study cards sorted by difficulty and subject area.</li>
+      <li style="margin-bottom: 8px;"><b>Quiz Agent:</b> Compiles 10 multiple-choice questions with comprehensive explanations.</li>
+      <li style="margin-bottom: 8px;"><b>Idea Generator Agent:</b> Proposes 5 novel research proposals based on findings.</li>
+      <li style="margin-bottom: 8px;"><b>Equations Agent:</b> Extracts LaTeX formulas with descriptions and contexts.</li>
+      <li style="margin-bottom: 8px;"><b>Highlights Agent:</b> Extracts key quotes and explains their thematic significance.</li>
+      <li style="margin-bottom: 8px;"><b>Figure Agent:</b> Detects figures, tables, and diagrams.</li>
+      <li style="margin-bottom: 8px;"><b>QA Agent:</b> Executes grounded, vector-supported QA using cosine similarity on ChromaDB.</li>
+      <li style="margin-bottom: 8px;"><b>Literature Review Agent:</b> Compiles comparative summaries across multiple papers.</li>
+      <li style="margin-bottom: 8px;"><b>Writing Assistant Agent:</b> Generates slide outlines and drafting documents.</li>
+    </ul>
+  </div>
+  <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-bottom: 12px;">LangGraph Execution Pipeline</h3>
+  <p style="margin-bottom: 20px;">
+    The state graph handles execution in three tasks:
+  </p>
+  <table style="border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 30px;">
+    <thead>
+      <tr style="background-color: #f1f5f9;">
+        <th style="padding: 10px 14px; border: 1px solid #cbd5e1; font-weight: 700; width: 25%;">Task Route</th>
+        <th style="padding: 10px 14px; border: 1px solid #cbd5e1; font-weight: 700;">Node Chain</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-weight: 600; color: #475569;">Full Process</td>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-family: monospace; font-size: 0.85rem;">pdf_ingestion_node &rarr; text_cleaning_node &rarr; chunking_embedding_node &rarr; paper_understanding_node &rarr; summary_node &rarr; keyword_extraction_node &rarr; citation_node &rarr; gap_analysis_node &rarr; future_work_node &rarr; experiment_suggestions_node &rarr; mind_map_node &rarr; flashcards_node &rarr; quiz_node &rarr; idea_generator_node &rarr; equations_node &rarr; highlights_node &rarr; figure_extraction_node &rarr; callback_node</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-weight: 600; color: #475569;">Literature Review</td>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-family: monospace; font-size: 0.85rem;">chunking_embedding_node &rarr; literature_review_node &rarr; writing_assistant_node &rarr; callback_node</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-weight: 600; color: #475569;">Grounded QA</td>
+        <td style="padding: 10px 14px; border: 1px solid #cbd5e1; font-family: monospace; font-size: 0.85rem;">chunking_embedding_node &rarr; qa_node &rarr; END</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
+  <!-- ── SECTION 8: HOW TO USE ────────────────────────────────────────────── -->
   <h2 id="how-to-use" style="color: #4f46e5; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
     📖 How to Use the Project
   </h2>
 
   <p style="margin-bottom: 16px;">
-    Follow this step-by-step guide to complete a full research synthesis lifecycle:
+    Follow this step-by-step guide to complete a full research lifecycle:
   </p>
-
   <ol style="line-height: 1.8; margin-bottom: 30px; padding-left: 24px;">
     <li style="margin-bottom: 15px;">
       <b>Create and Verify Your Account:</b>
@@ -183,9 +353,47 @@
     </li>
     <li>
       <b>Compile Literature Reviews:</b>
-      <br>Select multiple papers in your library dashboard and click **Compile Literature Review** to generate comparative markdown papers.
+      <br>Select multiple papers in your library dashboard and click **Compile Literature Review** to generate comparative markdown reviews.
     </li>
   </ol>
+
+  <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
+  <!-- ── NEW SECTION: LIBRARY PACKAGES DETAILS ──────────────────────────────── -->
+  <h2 id="library-packages" style="color: #0d9488; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
+    📦 Library Packages Details
+  </h2>
+
+  <p style="margin-bottom: 20px;">
+    Below are the granular details of key package dependencies loaded across each microservice folder:
+  </p>
+
+  <div style="background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; margin-bottom: 30px;">
+    <h3 style="color: #4f46e5; font-size: 1.2rem; margin-top: 0; margin-bottom: 12px;">1. Frontend Dependencies (React & Vite Node Bundle)</h3>
+    <ul style="padding-left: 20px; margin-bottom: 15px; line-height: 1.8;">
+      <li><code>react-router-dom (^6.20.0)</code>: Client route mapping and session login guards.</li>
+      <li><code>framer-motion (^10.16.0)</code>: Rich micro-interactions, page swaps, draggable components, and otp form slides.</li>
+      <li><code>axios (^1.6.0)</code>: Dynamic async gateway requests configuration for CORS communications.</li>
+      <li><code>react-hook-form (^7.48.0)</code>: Input validation handling, validation schemas, and password security indicators.</li>
+    </ul>
+    <h3 style="color: #059669; font-size: 1.2rem; margin-top: 20px; margin-bottom: 12px;">2. Express Backend Dependencies (API Server Bundle)</h3>
+    <ul style="padding-left: 20px; margin-bottom: 15px; line-height: 1.8;">
+      <li><code>mongoose (^8.0.0)</code>: Schema structures matching Mongoose ODM schemas to Atlas collections.</li>
+      <li><code>bcryptjs (^2.4.3)</code>: Client credentials hashing using a 12-round salt algorithm.</li>
+      <li><code>jsonwebtoken (^9.0.0)</code>: User verification cookie signature validation.</li>
+      <li><code>nodemailer (^6.9.0)</code>: Verification code transporter handling Gmail SMTP connections.</li>
+      <li><code>helmet (^7.1.0)</code>: Secure HTTP response headers setup to block scripting injections.</li>
+      <li><code>express-rate-limit (^7.1.0)</code>: Brute force request limiters (200 requests / 15 mins).</li>
+    </ul>
+    <h3 style="color: #7c3aed; font-size: 1.2rem; margin-top: 20px; margin-bottom: 12px;">3. Python Microservice Dependencies (FastAPI AI Workers)</h3>
+    <ul style="padding-left: 20px; margin-bottom: 0; line-height: 1.8;">
+      <li><code>fastapi (0.111.0)</code>: Async ASGI application endpoints processing callback tasks.</li>
+      <li><code>langgraph (0.1.4)</code>: Stateful research graph multi-agent routing.</li>
+      <li><code>chromadb (0.5.0)</code>: Vector persistence repository for chunk queries.</li>
+      <li><code>sentence-transformers (3.0.0)</code>: local MiniLM embedding vectorizer model.</li>
+      <li><code>groq (0.9.0)</code>: Python Groq SDK client parsing prompt jobs.</li>
+      <li><code>pymupdf (1.24.0) & pdfplumber (0.11.0)</code>: PDF structural parsing and math extraction engines.</li>
+    </ul>
+  </div>
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 
@@ -199,6 +407,7 @@ CBSOT-FINAL/
 │
 ├── README.md               &larr; This file (highly detailed HTML documentation)
 ├── SETUP_INSTRUCTIONS.md   &larr; Step-by-step account configuration instructions
+├── researchmind_banner.png &larr; High-quality application digital header banner
 │
 ├── FRONTEND/               &larr; React client (Vite build)
 │   ├── src/
@@ -255,7 +464,6 @@ CBSOT-FINAL/
   </h2>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
-    
     <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; background-color: #ffffff;">
       <h3 style="color: #4f46e5; margin-top: 0;">🎨 Frontend</h3>
       <ul style="padding-left: 20px;">
@@ -267,7 +475,6 @@ CBSOT-FINAL/
         <li><b>React Hook Form:</b> Form control</li>
       </ul>
     </div>
-
     <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; background-color: #ffffff;">
       <h3 style="color: #059669; margin-top: 0;">⚙️ Backend</h3>
       <ul style="padding-left: 20px;">
@@ -280,7 +487,6 @@ CBSOT-FINAL/
         <li><b>Nodemailer:</b> System notification emails</li>
       </ul>
     </div>
-
     <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; background-color: #ffffff;">
       <h3 style="color: #7c3aed; margin-top: 0;">🤖 AI Service</h3>
       <ul style="padding-left: 20px;">
@@ -545,89 +751,6 @@ VITE_MAX_UPLOAD_SIZE_MB=25
       <li><b>Factual Grounding:</b> No hallucination rule. The vector database parses PDF sentences into chunk nodes. Retrieval is bounded by cosine similarity. In case of zero similarity, agents output a clean fallback payload rather than guess information.</li>
     </ul>
   </div>
-
-  <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
-
-  <!-- ── DEPENDENCIES SECTION ─────────────────────────────────────────────── -->
-  <h2 id="dependencies" style="color: #4f46e5; font-size: 1.8rem; font-weight: 700; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 20px;">
-    📦 Package Dependencies
-  </h2>
-
-  <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-bottom: 12px;">React Frontend Dependencies</h3>
-  <table style="border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 30px;">
-    <thead>
-      <tr style="background-color: #f1f5f9;">
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700; width: 30%;">Package</th>
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700; width: 20%;">Version</th>
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700;">Usage</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">react</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^18.2.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Base component framework</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">react-router-dom</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^6.20.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Dynamic routes and authentication guards</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">framer-motion</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^10.16.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Interactive slide effects and animations</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">react-icons</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^4.12.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Lucide and Feather icon packages</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">axios</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^1.6.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">REST request client</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-bottom: 12px;">Express Backend Dependencies</h3>
-  <table style="border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 30px;">
-    <thead>
-      <tr style="background-color: #f1f5f9;">
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700; width: 30%;">Package</th>
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700; width: 20%;">Version</th>
-        <th style="padding: 10px; border: 1px solid #cbd5e1; font-weight: 700;">Usage</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">express</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^4.18.2</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">HTTP routing and server control</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">mongoose</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^8.0.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">NoSQL database communication layer</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">jsonwebtoken</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^9.0.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Access control token signature verification</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">cloudinary</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^2.0.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">File uploads management and retrieval</td>
-      </tr>
-      <tr>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">helmet</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1; font-family: monospace;">^7.1.0</td>
-        <td style="padding: 10px; border: 1px solid #cbd5e1;">Response headers protection and CSP config</td>
-      </tr>
-    </tbody>
-  </table>
 
   <hr style="border: 0; height: 1px; background: #e2e8f0; margin: 40px 0;">
 

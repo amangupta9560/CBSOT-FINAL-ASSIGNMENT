@@ -8,7 +8,7 @@
   <!-- ── MAIN HEADER ──────────────────────────────────────────────────────── -->
   <h1 style="color: #1e3a8a; font-size: 2.8rem; font-weight: 800; border-bottom: 4px solid #3b82f6; padding-bottom: 15px; margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
     <span style="background: linear-gradient(135deg, #3b82f6, #6366f1); color: white; padding: 8px 16px; border-radius: 16px; font-size: 2.2rem; box-shadow: 0 4px 12px rgba(59,130,246,0.25);"></span>
-    ResearchMind AI — Agentic AI Research OS
+    ResearchMind AI — Agentic AI Research OS Project
   </h1>
 
   <!-- ── TECH STACK BADGES ────────────────────────────────────────────────── -->
